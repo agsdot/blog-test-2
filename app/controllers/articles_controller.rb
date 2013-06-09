@@ -14,7 +14,9 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @article = Article.find(params[:id])
-
+    @comments = @event.comment_threads.order('created_at desc')
+    @new_comment = Comment.build_from(@article, current_user, "")
+ 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @article }
