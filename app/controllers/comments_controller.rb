@@ -11,4 +11,18 @@ class CommentsController < ApplicationController
       render :js => "alert('error saving comment');"
     end
   end
+
+	def destroy
+	  @comment = Comment.find(params[:id])
+	  if @comment.destroy
+	    render :json => @comment, :status => :ok
+	  else
+	    render :js => "alert('error deleting comment');"
+	  end
+	end
+
 end
+
+
+
+
