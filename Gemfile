@@ -26,6 +26,8 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'acts_as_commentable_with_threading'
 gem 'haml'
+gem 'omniauth-twitter'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
