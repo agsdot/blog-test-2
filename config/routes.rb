@@ -3,6 +3,7 @@ BootstrapSass::Application.routes.draw do
   # resoures :articles do
     resources :comments, :only => [:create, :destroy]
   # end
+  match 'auth/:provider/callback', to: 'sessions#create'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
