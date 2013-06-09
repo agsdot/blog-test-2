@@ -1,7 +1,5 @@
-A small project to test the Bootstrap-Sass gem integration with the
-Rails project.
 
-Followed guidelines of the following Daniel Kehoe page :
-http://railsapps.github.io/twitter-bootstrap-rails.html
+A practice Rails project to use comments and comment threading sans gem for comments.
+https://github.com/elight/acts_as_commentable_with_threading
+also using http://railsapps.github.io/twitter-bootstrap-rails.html
 
-Tests out fine in the "testing" branch of the project.
