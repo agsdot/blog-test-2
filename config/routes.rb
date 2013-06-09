@@ -1,6 +1,7 @@
 BootstrapSass::Application.routes.draw do
   resources :articles
 
+  resources :comments, :only => [:create, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
